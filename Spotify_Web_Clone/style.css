@@ -219,6 +219,8 @@ a {
 .album {
     width: 25%;
     /* background-color: red; */
+    display: flex;
+    align-items: center;
 }
 
 .player {
@@ -273,4 +275,61 @@ a {
     width: 0.75rem;
     margin-top: -4px;
     border-radius: 50%;
+}
+
+.album-icon {
+    height: 1.2rem;
+    margin-left: 1rem;
+}
+
+.other-controls {
+    align-items: center;
+    height: 2rem;
+    margin: 1rem 0 0 1rem;
+    justify-content: center;
+}
+
+.progress-bar-2 {
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+    height: 2rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.progress-bar-2::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.25rem;
+}
+
+.progress-bar-2::-webkit-slider-thumb {
+    appearance: none;
+    background-color: #1bd760;
+    height: 0.75rem;
+    width: 0.75rem;
+    margin-top: -4px;
+    border-radius: 50%;
+}
+
+.heading {
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+}
+
+.heading1 {
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.heading2 {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width:1000px) {
+    .controls {
+        display: none;
+    }
 }
